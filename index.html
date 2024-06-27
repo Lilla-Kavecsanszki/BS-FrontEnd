@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Sardinia - Homepage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://kit.fontawesome.com/b4a11e6ad7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <!-- Logo with custom class for sizing -->
+                <a class="navbar-brand nav-link logo" href="#home">
+                    <img class="logo-image" src="assets/images/logo.png" alt="Building Sardinia Logo">
+                </a>
+                <!-- Navbar Toggler for smaller screens -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#buy">Buy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sell">Sell</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#rent">Rent</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#construction">Construction</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#valuation">Valuation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Our Services</a>
+                        </li>
+                    </ul>
+                    <!-- Account link -->
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#account">My Account</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video autoplay muted loop id="hero-video">
+            <source src="assets/videos/hero_video.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="hero-content text-center text-white">
+            <h1>Building Sardinia</h1>
+            <p>Your captivating introduction here.</p>
+        </div>
+    </section>
+
+    <!-- Main content -->
+    <main class="container py-5">
+        <!-- Property Listings Section -->
+        <section class="property-listings py-5">
+            <h2 class="text-center mb-4">Property Listings</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 mb-4">
+                    <div class="property">
+                        <img src="property1.jpg" alt="Property 1" class="img-fluid">
+                        <div class="property-details bg-light p-3">
+                            <h3 class="text-center">Property Name</h3>
+                            <p class="text-center">Description and details...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services/Features Section -->
+        <section class="services py-5">
+            <h2 class="text-center mb-4">Our Services</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 mb-4">
+                    <div class="service text-center p-4">
+                        <i class="fas fa-home fa-3x mb-3"></i>
+                        <div>Service 1 Description</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="service text-center p-4">
+                        <i class="fas fa-building fa-3x mb-3"></i>
+                        <div>Service 2 Description</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about-us py-5">
+            <h2 class="text-center mb-4">About Us</h2>
+            <p>Building Sardinia is committed to helping you find the perfect home in Sardinia. With years of experience in real estate and construction, we offer a wide range of services to meet your needs.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <hr>
+    <footer class="footer-cover text-white text-center py-4">
+        <div class="footer-content">
+            <p>Follow us on social media:</p>
+            <p class="socials">
+                <a class="links facebook" href="https://www.facebook.com/buildingsardinia"><i class="fab fa-facebook-f icon"></i></a>
+                <a class="links linkedin" href="https://www.linkedin.com/buildingsardinia"><i class="fab fa-linkedin-in icon"></i></a>
+                <a class="links insta" href="https://www.instagram.com/buildingsardinia"><i class="fab fa-instagram icon"></i></a>
+            </p>
+            <p>&copy; 2024 Building Sardinia. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap and Font Awesome JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
