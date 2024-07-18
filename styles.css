@@ -185,7 +185,7 @@ main {
 }
 
 .property:hover {
-    transform: scale(1.02);
+    transform: scale(1.04);
 }
 
 .property img {
@@ -245,10 +245,12 @@ main {
     margin: 0;
     padding: 1em;
     text-align: center;
+    border-radius: 10px;
 }
 
 .property p {
-    padding: 0 1em 1em;
+    padding: 1em 1em 1em;
+    color: #028090;
 }
 
 /* Services/Features section styles */
@@ -265,29 +267,22 @@ main {
     margin-bottom: 1em;
 }
 
-.services ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.services li {
+.service {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 1em;
     margin: 1em;
-    display: flex;
-    align-items: center;
-    width: calc(33% - 2em);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.services li i {
+.service i {
     color: #028090;
-    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.service-description {
+    color: #028090;
 }
 
 /* About Us section styles */
@@ -306,6 +301,7 @@ main {
 
 .about-us p {
     text-align: justify;
+    color: #005f6b;
 }
 
 /* Footer styles */
