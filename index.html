@@ -16,55 +16,105 @@
 
 <body>
     <!-- Header Section -->
-    <header class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <!-- Logo with custom class for sizing -->
-                <a class="navbar-brand nav-link logo" href="#home">
-                    <img class="logo-image" src="assets/images/logo.png" alt="Building Sardinia Logo">
+    <header>
+        <!-- Logo, Search, Sign-In, Language Dropdown -->
+        <div id="topnav" class="row nav-background pt-lg-2 d-none d-lg-flex align-items-center">
+            <div class="col-lg-6 d-flex justify-content-start align-items-center">
+                <!-- Logo -->
+                <a href="#" class="nav-link main-logo-link">
+                    <h2 class="logo-font my-0"><strong>Building</strong> Sardinia</h2>
                 </a>
-                <!-- Navbar Toggler for smaller screens -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- Navbar links -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#buy">Buy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#sell">Sell</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#rent">Rent</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#construction">Construction</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#valuation">Valuation</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services">Our Services</a>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-end">
+                <div class="d-flex justify-content-start align-items-center">
+                    <!-- Search Bar -->
+                    <form method="GET" action="#" class="w-100">
+                        <div class="input-group w-100">
+                            <input class="form-control border-1 bg-transparent" type="text" name="q"
+                                placeholder="Search by Name" style="border-bottom: 1px solid #051c2c;">
+                            <div class="input-group-append">
+                                <button class="form-control btn border-0" type="submit">
+                                    <span class="icon"><i class="fas fa-search fa-lg" style="color: #051c2c;"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="d-flex justify-content-end align-items-center">
+                    <!-- Sign-In Link -->
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item dropdown">
+                            <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <div class="text-center icon">
+                                    <div id="user-icon"><i class="far fa-user fa-lg"></i></div>
+                                    <p class="my-0" id="user-name">My Account</p>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                                <a href="#" class="dropdown-item" id="product-management" style="display: none;">Product
+                                    Management</a>
+                                <a href="#" class="dropdown-item" id="profile-link">My Profile</a>
+                                <a href="#" class="dropdown-item" id="logout-link" style="display: none;">Logout</a>
+                                <a href="#" class="dropdown-item" id="register-link">Register</a>
+                                <a href="#" class="dropdown-item" id="login-link">Login</a>
+                            </div>
                         </li>
                     </ul>
-                    <!-- Account link -->
-                    <div class="navbar-nav">
-                        <a class="nav-link" href="#account">
-                            <i class="fa-regular fa-user"></i> My Account
-                        </a>
-                    </div>
+                </div>
+                <div class="d-flex justify-content-end align-items-center">
+                    <!-- Language Dropdown -->
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item dropdown">
+                            <a class="text-black nav-link" href="#" id="language-options" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <div class="text-center icon">
+                                    <i class="fas fa-globe fa-lg"></i>
+                                    <p class="my-0">EN</p> <!-- Changes to current language --> 
+                                </div>
+                            </a>
+                            <div class="dropdown-menu border-0" aria-labelledby="language-options">
+                                <a href="#" class="dropdown-item">EN</a>
+                                <a href="#" class="dropdown-item">IT</a>
+                                <a href="#" class="dropdown-item">DE</a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </nav>
+        </div>
+
+        <!-- Navigation Bar -->
+        <div class="row nav-background">
+            <nav class="navbar navbar-expand-lg w-100 col-lg-12 justify-content-end d-flex">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="main-nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Properties</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Construction</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Rent</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Our Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
     
 
@@ -81,7 +131,7 @@
     </section>
 
     <!-- Main content -->
-    <main class="container py-5">
+    <main class="container">
         <!-- Property Listings Section -->
         <section class="property-listings py-5">
             <h2 class="text-center mb-4">Property Listings</h2>
@@ -158,7 +208,6 @@
                   </div>
                 </div>
               </div>
-            
         </section>
 
         <!-- Services/Features Section -->
@@ -166,7 +215,7 @@
             <h2 class="text-center mb-4">Our Services</h2>
             <div class="row justify-content-center">
                 <div class="col-lg-4 mb-4">
-                    <div class="service text-center p-4">
+                    <div class="service text-center p-4">  what is p-4?
                         <i class="fas fa-home fa-3x mb-3"></i>
                         <div class="service-description">Service 1 Description</div>
                     </div>
@@ -190,7 +239,6 @@
     </main>
 
     <!-- Footer Section -->
-    <hr>
     <footer class="footer-cover text-white text-center py-4">
         <div class="footer-content">
             <p>Follow us on social media:</p>

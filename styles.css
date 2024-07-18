@@ -16,7 +16,7 @@ body {
 /* Header styles */
 header {
     background-color: rgba(255, 255, 255, 0.6);
-    color: red;
+    color: #051c2c;
     padding: 0.3em;
     position: fixed;
     width: 100%;
@@ -24,85 +24,60 @@ header {
     z-index: 1000;
 }
 
-.logo {
-    position: absolute; /* Position the logo absolutely */
-    top: 80%; 
-    transform: translateY(-50%); /* Center vertically */
-    left: 0.5%; 
-    z-index: 100; /* Ensure the logo is above the navbar */
-
+.nav-background {
+    padding: 10px 0;
 }
 
-.logo-image {
-    max-height: 80px; 
+.main-logo-link {
+    color: #000;
+    text-decoration: none;
 }
 
-#navbarNav {
-    margin-left: 80px;
+.logo-font {
+    font-size: 2rem;
+    white-space: nowrap;
+    color: #051c2c;
 }
 
-.navbar-light .navbar-nav .nav-link {
-    color: rgb(52, 61, 22); 
-    font-family: Poppins, sans-serif;
+.form-control {
+    border-radius: 0;
+    box-shadow: none;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
-    background-color: rgba(52, 61, 22, 0.5);
-    color: white;
+#user-name {
+    color: #051c2c
 }
 
-@media (max-width: 991.98px) {
-    .navbar-nav {
-        margin-top: 0; /* Remove margin top on smaller screens */
+#language-options {
+    color: #051c2c;
+}
+
+.navbar-nav a {
+    color: #051c2c;
+    text-decoration: none;
+    font-size: large;
+}
+
+.icon {
+    display: inline-block;
+    color: #051c2c;
+}
+
+@media (max-width: 992px) {
+    .d-lg-flex {
+        display: block !important;
+    }
+
+    .d-none.d-lg-flex {
+        display: none !important;
     }
 }
 
-.logo-image {
-    max-height: 80px; 
-}
-
-#navbarNav {
-    margin-left: 80px;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: rgb(52, 61, 22); 
-    font-family: Poppins, sans-serif;
-}
-  
-  /* Example keyframes for animations */
-  @keyframes criss-cross-left {
-    from { transform: translate(-50%, -50%); }
-    to { transform: translate(-20px, -20px); } /* Adjust as needed */
-  }
-  
-  @keyframes criss-cross-right {
-    from { transform: translate(50%, -50%); }
-    to { transform: translate(20px, -20px); } /* Adjust as needed */
-  }
-  
-
-.navbar-light .navbar-nav .nav-link:hover {
-    background-color: rgba(52, 61, 22, 0.5);
-    color: white;
-}
-
-@media (max-width: 991.98px) {
-    .navbar-nav {
-        margin-top: 0; /* Remove margin top on smaller screens */
+@media (max-width: 576px) {
+    .logo-font {
+        font-size: 1.5rem;
     }
 }
-  
-  /* Example keyframes for animations */
-  @keyframes criss-cross-left {
-    from { transform: translate(-50%, -50%); }
-    to { transform: translate(-20px, -20px); } /* Adjust as needed */
-  }
-  
-  @keyframes criss-cross-right {
-    from { transform: translate(50%, -50%); }
-    to { transform: translate(20px, -20px); } /* Adjust as needed */
-  }
   
 /* Hero section styles */
 .hero {
@@ -412,7 +387,7 @@ main {
     background-color: #e6e6e6;
     padding: 2em;
     border-radius: 10px;
-    margin-bottom: 2em;
+    margin-bottom: 0,5em;
     text-align: center;
 }
 
