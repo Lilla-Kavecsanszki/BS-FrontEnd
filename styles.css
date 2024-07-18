@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Poppins, sans-serif;
+    font-family: "Cormorant Garamond", serif;
     margin: 0;
     padding: 0;
     background-color: #f0f8ff;
@@ -16,6 +16,7 @@ body {
 /* Header styles */
 header {
     background-color: rgba(255, 255, 255, 0.6);
+    font-family: "Playfair Display", serif;
     color: #051c2c;
     padding: 0.3em;
     position: fixed;
@@ -38,6 +39,17 @@ header {
     white-space: nowrap;
     color: #051c2c;
 }
+
+.logo {
+    position: absolute; /* Position the logo absolutely */
+    margin-top: 20%;
+    z-index: 10000; /* Ensure the logo is above the navbar */
+}
+
+.logo-image {
+    max-height: 250px; 
+}
+
 
 .form-control {
     border-radius: 0;
