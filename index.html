@@ -85,17 +85,80 @@
         <!-- Property Listings Section -->
         <section class="property-listings py-5">
             <h2 class="text-center mb-4">Property Listings</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-4 mb-4">
-                    <div class="property">
-                        <img src="assets/images/house1.jpg" alt="Property 1" class="img-fluid">
-                        <div class="property-details bg-light p-3">
-                            <h3 class="text-center">Property Name</h3>
-                            <p class="text-center">Description and details...</p>
+            <div class="carousel">
+                <div class="carousel__body">
+                  <div class="carousel__prev">
+                    <i class="fa-solid fa-circle-chevron-left fa-2xl" style="color: #005f6b;"></i>
+                  </div>
+                  <div class="carousel__slider">
+                    <div class="carousel__slider__item">
+                      <div class="item__3d-frame">
+                        <div class="item__3d-frame__box item__3d-frame__box--front">
+                          <div class="property">
+                            <img src="assets/images/house1.jpg" alt="Property 1" class="img-fluid">
+                            <div class="property-details bg-light p-3">
+                              <h3 class="text-center">Property Name 1</h3>
+                              <p class="text-center">Description and details 1...</p>
+                            </div>
+                          </div>
                         </div>
+                        <div class="item__3d-frame__box item__3d-frame__box--left"></div>
+                        <div class="item__3d-frame__box item__3d-frame__box--right"></div>
+                      </div>
                     </div>
+                    <div class="carousel__slider__item">
+                      <div class="item__3d-frame">
+                        <div class="item__3d-frame__box item__3d-frame__box--front">
+                          <div class="property">
+                            <img src="assets/images/house2.jpg" alt="Property 2" class="img-fluid">
+                            <div class="property-details bg-light p-3">
+                              <h3 class="text-center">Property Name 2</h3>
+                              <p class="text-center">Description and details 2...</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item__3d-frame__box item__3d-frame__box--left"></div>
+                        <div class="item__3d-frame__box item__3d-frame__box--right"></div>
+                      </div>
+                    </div>
+                    <div class="carousel__slider__item">
+                      <div class="item__3d-frame">
+                        <div class="item__3d-frame__box item__3d-frame__box--front">
+                          <div class="property">
+                            <img src="assets/images/house3.jpg" alt="Property 3" class="img-fluid">
+                            <div class="property-details bg-light p-3">
+                              <h3 class="text-center">Property Name 3</h3>
+                              <p class="text-center">Description and details 3...</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item__3d-frame__box item__3d-frame__box--left"></div>
+                        <div class="item__3d-frame__box item__3d-frame__box--right"></div>
+                      </div>
+                    </div>
+                    <div class="carousel__slider__item">
+                        <div class="item__3d-frame">
+                          <div class="item__3d-frame__box item__3d-frame__box--front">
+                            <div class="property">
+                              <img src="assets/images/house4.jpg" alt="Property 3" class="img-fluid">
+                              <div class="property-details bg-light p-3">
+                                <h3 class="text-center">Property Name 4</h3>
+                                <p class="text-center">Description and details 3...</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="item__3d-frame__box item__3d-frame__box--left"></div>
+                          <div class="item__3d-frame__box item__3d-frame__box--right"></div>
+                        </div>
+                      </div>
+                    <!-- Add more carousel__slider__item divs here as needed -->
+                  </div>
+                  <div class="carousel__next">
+                    <i class="fa-solid fa-circle-chevron-right fa-2xl" style="color: #005f6b;"></i>
+                  </div>
                 </div>
-            </div>
+              </div>
+            
         </section>
 
         <!-- Services/Features Section -->
@@ -144,6 +207,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
